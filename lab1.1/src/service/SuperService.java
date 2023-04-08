@@ -85,4 +85,20 @@ public class SuperService {
             return findFibonacci(n-1) + findFibonacci(n-2);
         }
     }
+
+    /**
+        @findPower - find the power of two numbers;
+        @param1 - double number (a);
+        @param2 - integer number (n);
+        @return - powered value(double);
+    **/
+    public static double findPower(double a, int n) {
+        if (n == 0) {
+            return 1;
+        } else if (n > 0) {
+            return a * findPower(a,n-1);
+        } else {
+            return 1/ a * findPower(a, n+1);
+        }
+    }
 }
