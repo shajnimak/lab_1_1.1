@@ -101,4 +101,22 @@ public class SuperService {
             return 1/ a * findPower(a, n+1);
         }
     }
+
+    /**
+        @getReverse - get reversed list
+        @param1 - integer array (array)
+        @param2 - integer number (start) reverse start index
+        @param3 - integer number (end) reverse end index
+        @return - reversed array
+    **/
+    public static void getReverse(int[] arr, int start, int end) {
+        if (start >= end) {
+            return;
+        }
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        getReverse(arr, start+1, end-1);
+    }
+
 }
