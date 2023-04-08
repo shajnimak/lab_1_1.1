@@ -119,4 +119,18 @@ public class SuperService {
         getReverse(arr, start+1, end-1);
     }
 
+    /**
+     @findDigit - checking for a digit
+     @param - string (s)
+     @return - void method, but output "Yes/No"
+     **/
+    public static void findDigit(String s) {
+        for (int i = 0; i < s.length(); i++) {
+            if (!Character.isDigit(s.charAt(i))) {
+                System.out.println("No");
+                return;
+            }
+        }
+        System.out.println("Yes");
+    }
 }
