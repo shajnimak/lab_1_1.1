@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SuperService {
     /**
-     @findMin - To find the minimum in a list
+     @findMin - To find the minimum in a array
      @param - integer number (N)
      @return - the smallest array object(integer)
      **/
@@ -22,9 +22,9 @@ public class SuperService {
     }
 
     /**
-     @findAverage - To find the average of a list
+     @findAverage - To find the average of array
      @param - integer number (N)
-     @return - average of a list(double)
+     @return - average of a array(double)
      **/
     public static void findAverage(int N){
         int[] array = new int[N];
@@ -103,7 +103,7 @@ public class SuperService {
     }
 
     /**
-        @getReverse - get reversed list
+        @getReverse - get reversed array
         @param1 - integer array (array)
         @param2 - integer number (start) reverse start index
         @param3 - integer number (end) reverse end index
